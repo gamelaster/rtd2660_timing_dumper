@@ -121,6 +121,8 @@ int main(int argc, char** argv)
     return -1;
   }
 
+  printf("Found offset! 0x%08X\n", offset);
+
   PanelType panel = {0};
   memcpy(&panel, firmware + offset - 4, 31);
 
